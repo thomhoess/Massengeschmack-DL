@@ -79,7 +79,7 @@ def dl_video(id, path):
 
     # Format various information
     fileType = "." + response["files"][0]["url"].split(".")[-1]
-    fileName = response["title"] + " - " + datetime.utcfromtimestamp(response["date"]).strftime('%Y-%m-%d')
+    fileName = response["title"] + " - S01E" + response["title"].split()[1] + " - " + datetime.utcfromtimestamp(response["date"]).strftime('%Y-%m-%d')
 
     # Download the video via system-wide install of yt-dlp
     ytdlpCmd = 'yt-dlp https:' + response["files"][0]["url"] + ' -o "' + fileName + fileType + '" -P "' + path
