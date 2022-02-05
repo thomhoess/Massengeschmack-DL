@@ -35,24 +35,8 @@ def api_call(params, username, password):
 
 def list_formats():
     # List all formats and their ids
-    formats = []
-
-    i = 0
-    while True:
-        params = (
-            ("action", "getFeed"),
-            ('from', "[" + str(i) + "]"),
-            ('limit', "1")
-        )
-        # Store number of pages (API does pagination)
-        response = api_call(params, username, password)
-
-        # Check if format exists / has at least one video, break loop when last format is reached
-        if response["pages"] > 0:
-            formats.append(str(response["eps"][0]["pid"]) + ": " + response["eps"][0]["pdesc"])
-            i = i + 1
-        else:
-            break
+    formats = open("formats.txt", "r")
+    formats = formats.read()
 
     return formats
 
@@ -119,8 +103,7 @@ path = os.path.join(path, '')
 
 # List all available formats and their pid
 print("Formate und deren ID:")
-for i in list_formats():
-    print(i)
+print(list_formats())
 
 # Ask for program id
 pid = input("ID des Formats: ")
