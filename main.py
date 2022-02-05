@@ -35,7 +35,7 @@ def api_call(params, username, password):
 
 def list_formats():
     # List all formats and their ids
-    formats = open("formats.txt", "r")
+    formats = open("formats.txt", "r", encoding="utf-8")
     formats = formats.read()
 
     return formats
