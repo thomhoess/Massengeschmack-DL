@@ -10,11 +10,11 @@
 9: Sakura
 10: Migropolis
 11: Serienkiller
-12: Das Vorzelt zur H�lle
+12: Das Vorzelt zur Hölle
 13: Jung & Anders
 14: Interaktiv
 15: Sprechplanet
-16: Die Geisterj�ger
+16: Die Geisterjäger
 17: Der ComicTalk
 18: Moritz und die Anderen
 19: Veto
@@ -23,7 +23,7 @@
 22: Schatzkammer
 23: Die Mediatheke
 24: Trip
-25: Sonntagsfr�hst�ck
+25: Sonntagsfrühstück
 26: Das Studio
 27: Paddys Retrokosmos
 28: Das Studio (Plus)
